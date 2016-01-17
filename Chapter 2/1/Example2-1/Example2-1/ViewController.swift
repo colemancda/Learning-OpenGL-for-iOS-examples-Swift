@@ -72,7 +72,16 @@ final class ViewController: GLKViewController {
         let view = self.view as! GLKView
         EAGLContext.setCurrentContext(view.context)
         
+        if vertexBufferID != 0 {
+            
+            glDeleteBuffers (1,                                 // STEP 7
+                            &vertexBufferID);
+            
+            vertexBufferID = 0
+        }
         
+        // Stop using the context created in -viewDidLoad
+        EAGLContext.setCurrentContext(nil)
     }
     
     // MARK: - Methods
