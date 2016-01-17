@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fei-ut-9dQ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--GLKit View Controller-->
+        <scene sceneID="xxO-Fw-aDi">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="fei-ut-9dQ" customClass="ViewController" customModule="Example2_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M0J-s3-cKw"/>
+                        <viewControllerLayoutGuide type="bottom" id="bWL-B5-u3Y"/>
+                    </layoutGuides>
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="Upx-hf-pdk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <connections>
+                            <outlet property="delegate" destination="fei-ut-9dQ" id="IXX-Yg-2r5"/>
+                        </connections>
+                    </glkView>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xrw-bL-1Xy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="324" y="252"/>
+        </scene>
+    </scenes>
+</document>
